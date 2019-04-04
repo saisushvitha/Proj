@@ -1,0 +1,146 @@
+<form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+  <script type="text/javascript">
+    function ValidateForm(frm) {
+      if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+      if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+      if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+      if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+      if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+      if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+      return true;
+    }
+  </script>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row gapp-15">
+        <div class="col-lg-4">
+          <label for="First_Name">First name *</label>
+          <input name="First_Name" type="text" maxlength="50" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Last_Name">Last name *</label>
+          <input name="Last_Name" type="text" maxlength="50" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Email_Address">Email *</label>
+          <input name="Email_Address" type="text" maxlength="100" class="form-control txt-border" />
+        </div>
+      </div>
+      <div class="row gapp-10">
+        <div class="col-lg-4">
+          <label for="Primary Location">Primary Location</label>
+          <input name="Primary Location" type="text" maxlength="255" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Current Location">Current Location</label>
+          <input name="Current Location" type="text" maxlength="255" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Work Start Date">Work Start Date</label>
+          <input name="Work Start Date" type="date" maxlength="100" class="form-control txt-border" />
+        </div>
+      </div>
+      <div class="row gapp-10">
+
+      </div>
+      <div class="row gapp-10">
+        <div class="col-lg-4">
+          <label for="Experience">Experience</label>
+          <input name="Experience" type="text" maxlength="50" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Experience in Monocept">Experience in Monocept</label>
+          <input name="Experience in Monocept" type="text" maxlength="50" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Joining Date">Joining Date</label>
+          <input name="Joining Date" type="date" maxlength="20" class="form-control txt-border" />
+        </div>
+      </div>
+      <div class="row gapp-10">
+        <div class="col-lg-4">
+          <label for="Ending Date">Ending Date</label>
+          <input name="Ending Date" type="date" maxlength="20" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Designation">Designation</label><br />
+          <input name="Designation" type="text" maxlength="50" class="form-control txt-border" />
+        </div>
+        <div class="col-lg-4">
+          <label for="Employee status">Employee status</label><br />
+          <select class="form-control txt-border">
+            <option value=" ">.....</option>
+            <option value="Probation">Probation</option>
+            <option value="Active">Active</option>
+            <option value="Serving Notice">Serving Notice</option>
+            <option value="Resigned">Resigned</option>
+          </select>
+        </div>
+      </div>
+      <div class="row gapp-10">
+        <div class="col-lg-4">
+          <label for="Employee type">Employee type</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Full-Time">Full-Time</option>
+            <option value="Part-Time">Part-Time</option>
+            <option value="Contract-Internal">Contract-Internal</option>
+            <option value="Contract-External">Contract-External</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <label for="Department">Department</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Development">Development</option>
+            <option value="Testing">Testing</option>
+            <option value="Sales">Sales</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <label for="Allocation">Allocation</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Bench">Bench</option>
+            <option value="Service">Service</option>
+            <option value="Product">Product</option>
+            <option value="Presales">Presales</option>
+          </select>
+        </div>
+      </div>
+      <div class="row gapp-10">
+        <div class="col-lg-4">
+          <label for="Project Details">Project Details</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Project Name">Project Name</option>
+            <option value="Occupancy">Occupancy</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <label for="Project type">Project type</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Billable">Billable</option>
+            <option value="Non-billable">Non-billable</option>
+            <option value="Tentative">Tentative</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <label for="Skill Set">Skill Set</label>
+          <select class="form-control txt-border">
+            <option value=" ">....</option>
+            <option value="Primary Technology">Primary Technology</option>
+            <option value="Preferred Technology">Preferred Technology</option>
+            <option value="Current Technology">Current Technology</option>
+            <option value="Certification">Certification</option>
+          </select>
+        </div>
+      </div>
+      <div class="row gapp-20">
+          <div class="col-lg-4">
+              <button type="submit" value="Submit" width="100" class="btn btn-lg submit-btn">Submit</button>
+          </div>
+      </div>
+    </div>
+  </div>
